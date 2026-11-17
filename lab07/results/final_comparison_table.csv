@@ -1,0 +1,10 @@
+Pillar,Measurement / evidence,Result
+Data,Fashion-MNIST,"60,000 training images; 10,000 test images; 10 classes"
+Model,Baseline CNN,"1,015,338 parameters; 90.45% accuracy"
+Model,Best pruning run,"global, target 50%; 92.30% accuracy; 50.0% actual zero weights"
+Model,student_plain,"87,210 parameters; 89.95% accuracy; 0.341 MB"
+Model,student_distilled,"87,210 parameters; 89.56% accuracy; 0.341 MB"
+Compute,Baseline inference,"0.197 ms/image (batch size 1), device mps"
+Compute,Pruning and student latency,See pruning_results.csv and distillation_results.csv; measured on the recorded device
+Energy,Direct energy measurement,Not measured. No energy values are fabricated; energy efficiency is discussed qualitatively.
+Model,Structured pruning,Target filter removal 10%; actual zero filters 9.82%; 92.30% accuracy; 1015338 parameters; 3.883 MB
